@@ -56,6 +56,7 @@ st.markdown("---")
 # ---------------------------------------------------------------------------
 with st.sidebar:
     st.markdown("## Your Financial Profile")
+    st.button("🔄 Update Results", use_container_width=True)
 
     st.markdown("### Age & Timeline")
     current_age = st.number_input("Current Age", value=30, min_value=18, max_value=70, step=1)
@@ -68,13 +69,13 @@ with st.sidebar:
         st.warning("⚠️ Life expectancy should be above retirement age for meaningful results.")
 
     st.markdown("### Income & Expenses")
-    annual_income = st.number_input("Annual Gross Income ($)", value=100_000, min_value=0, step=5_000, format="%d")
+    annual_income = st.number_input("Annual Gross Income ($)", value=100_000, min_value=0, step=5_000)
     tax_rate = st.slider("Effective Tax Rate (%)", 0, 50, 25)
-    monthly_expenses = st.number_input("Monthly Expenses ($)", value=4_000, min_value=0, step=250, format="%d")
+    monthly_expenses = st.number_input("Monthly Expenses ($)", value=4_000, min_value=0, step=250)
 
     st.markdown("### Current Savings")
-    current_savings = st.number_input("Current Invested Assets ($)", value=150_000, min_value=0, step=10_000, format="%d")
-    monthly_investment = st.number_input("Monthly Investment ($)", value=2_500, min_value=0, step=250, format="%d")
+    current_savings = st.number_input("Current Invested Assets ($)", value=150_000, min_value=0, step=10_000)
+    monthly_investment = st.number_input("Monthly Investment ($)", value=2_500, min_value=0, step=250)
 
     st.markdown("### Investment Assumptions")
     investment_style = st.selectbox(
@@ -180,7 +181,6 @@ savings_rate = (monthly_investment * 12) / net_annual_income * 100 if net_annual
 # ---------------------------------------------------------------------------
 NUM_SIMS = 2000
 
-@st.cache_data
 def run_monte_carlo(
     n_sims, yrs, current, monthly, inc_growth, eq_frac, bnd_frac, infl, swr_r, expense_retire,
     ss_monthly_val, ss_age, retire_age, life_exp
