@@ -456,7 +456,7 @@ st.markdown("""
         ✓ Social Security integration<br>
         ✓ Print-ready retirement roadmap<br>
     </p>
-    <a href="https://clearmetric.gumroad.com" target="_blank">
+    <a href="https://clearmetric.gumroad.com/l/fire-calculator" target="_blank">
         Get It on Gumroad — $14.99 →
     </a>
 </div>
@@ -469,19 +469,19 @@ with cx1:
     st.markdown("""
     **📊 Budget Planner** — $13.99
     Track income, expenses, savings with the 50/30/20 framework.
-    [Get it →](https://clearmetric.gumroad.com/l/siutvi)
+    [Get it →](https://clearmetric.gumroad.com/l/budget-planner)
     """)
 with cx2:
     st.markdown("""
     **📈 Stock Portfolio Tracker** — $17.99
     Track 20 stocks, dividends, sector allocation, performance.
-    [Get it →](https://clearmetric.gumroad.com/l/unyium)
+    [Get it →](https://clearmetric.gumroad.com/l/stock-portfolio-tracker)
     """)
 with cx3:
     st.markdown("""
     **🏠 Rental Property Analyzer** — $19.99
     12+ metrics, 5-year projection, 4-property comparison.
-    [Get it →](https://clearmetric.gumroad.com/l/qkdcae)
+    [Get it →](https://clearmetric.gumroad.com/l/rental-property-analyzer)
     """)
 
 # Footer
