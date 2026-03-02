@@ -29,6 +29,34 @@
       }
       @keyframes spin { to { transform: rotate(360deg); } }
     </style>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "FIRE Calculator Pro",
+      "description": "Free FIRE calculator with Monte Carlo simulations, coast FIRE, barista FIRE scenarios. Plan your path to financial independence.",
+      "url": "https://avishbhasin.github.io/clearmetric-fire-calculator/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free interactive calculator. Premium Excel version available for $14.99"
+      },
+      "author": {
+            "@type": "Organization",
+            "name": "ClearMetric",
+            "url": "https://avishbhasin.github.io/clearmetric/"
+      },
+      "keywords": "FIRE calculator, financial independence, retire early, Monte Carlo simulation, coast FIRE, barista FIRE"
+}
+    </script>
+    <link rel="canonical" href="https://avishbhasin.github.io/clearmetric-fire-calculator/" />
+    <meta property="og:url" content="https://avishbhasin.github.io/clearmetric-fire-calculator/" />
+    <link rel="related" href="https://avishbhasin.github.io/clearmetric-rent-vs-buy/" title="Rent vs Buy Calculator" />
+    <link rel="related" href="https://avishbhasin.github.io/clearmetric-side-hustle-tax/" title="Side Hustle Tax Estimator" />
+    <link rel="related" href="https://avishbhasin.github.io/clearmetric-freelance-rate/" title="Freelance Rate Calculator" />
   </head>
   <body>
     <div id="root">
@@ -55,6 +83,17 @@
         },
         document.getElementById("root"),
       );
+    </script>
+    <div id="clearmetric-footer" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;border-top:2px solid #4fc3f7;padding:12px 20px;text-align:center;z-index:9999;font-family:Inter,sans-serif;">
+      <div style="font-size:12px;color:#888;margin-bottom:8px;">More Free Tools from ClearMetric</div>
+      <div><a href="https://avishbhasin.github.io/clearmetric-rent-vs-buy/" style="color:#4fc3f7;text-decoration:none;padding:8px 16px;border:1px solid #4fc3f7;border-radius:6px;font-size:14px;display:inline-block;margin:4px;">Rent vs Buy Calculator</a> <a href="https://avishbhasin.github.io/clearmetric-side-hustle-tax/" style="color:#4fc3f7;text-decoration:none;padding:8px 16px;border:1px solid #4fc3f7;border-radius:6px;font-size:14px;display:inline-block;margin:4px;">Side Hustle Tax Estimator</a> <a href="https://avishbhasin.github.io/clearmetric-freelance-rate/" style="color:#4fc3f7;text-decoration:none;padding:8px 16px;border:1px solid #4fc3f7;border-radius:6px;font-size:14px;display:inline-block;margin:4px;">Freelance Rate Calculator</a></div>
+      <div style="margin-top:8px;"><a href="https://clearmetric.gumroad.com/l/fire-calculator" style="color:#ffd700;text-decoration:none;font-size:13px;font-weight:600;">Get the Premium Excel Version ($14.99) &rarr;</a></div>
+    </div>
+    <script>
+      setTimeout(function() {
+        var footer = document.getElementById('clearmetric-footer');
+        if (footer) footer.style.display = 'block';
+      }, 20000);
     </script>
   </body>
 </html>
